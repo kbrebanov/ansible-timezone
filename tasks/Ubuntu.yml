@@ -1,0 +1,12 @@
+---
+# tasks file for timezone (Ubuntu specific)
+
+- name: Create timezone file
+  template: >
+    src=timezone.j2
+    dest=/etc/timezone
+    owner=root
+    group=root
+    mode=0644
+  notify: update tzdata
+  tags: timezone

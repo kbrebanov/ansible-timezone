@@ -1,2 +1,14 @@
 ---
 # tasks file for timezone
+
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+  tags: timezone
+
+- include: CentOS.yml
+  when: ansible_distribution == "CentOS"
+  tags: timezone
+
+- include: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags: timezone
