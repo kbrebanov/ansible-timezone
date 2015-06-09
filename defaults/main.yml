@@ -1,4 +1,4 @@
 ---
 # defaults file for timezone
 
-timezone_name: UTC
+timezone_name: Etc/UTC

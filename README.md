@@ -15,7 +15,7 @@ Role Variables
 
 | Name          | Default | Description          |
 |---------------|---------|----------------------|
-| timezone_name | UTC     | Timezone name to set |
+| timezone_name | Etc/UTC | Timezone name to set |
 
 Dependencies
 ------------
