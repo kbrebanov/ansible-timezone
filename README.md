@@ -1,7 +1,7 @@
 timezone
 ========
 
-[![Ansible Role](https://img.shields.io/ansible/role/3467.svg)](https://galaxy.ansible.com/list#/roles/3467)
+[![Build Status](https://travis-ci.org/kbrebanov/ansible-timezone.svg?branch=master)](https://travis-ci.org/kbrebanov/ansible-timezone)
 
 Configures timezone
 
