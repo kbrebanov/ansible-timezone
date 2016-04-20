@@ -26,17 +26,19 @@ Example Playbook
 ----------------
 
 Configure timezone to UTC
-```
+```yaml
 - hosts: all
   roles:
-    - { role: kbrebanov.timezone }
+    - kbrebanov.timezone
 ```
 
 Configure timezone to America/Montreal
-```
+```yaml
 - hosts: all
+  vars:
+    timezone_name: America/Montreal
   roles:
-    - { role: kbrebanov.timezone, timezone_name: America/Montreal }
+    - kbrebanov.timezone
 ```
 
 License
