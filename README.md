@@ -8,13 +8,13 @@ Configures timezone
 Requirements
 ------------
 
-This role requires Ansible 1.4 or higher.
+This role requires Ansible 1.9 or higher.
 
 Role Variables
 --------------
 
 | Name          | Default | Description          |
-|---------------|---------|----------------------|
+|:--------------|:--------|:---------------------|
 | timezone_name | Etc/UTC | Timezone name to set |
 
 Dependencies
