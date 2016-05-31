@@ -11,5 +11,21 @@
     mode: 0644
   notify:
     - update tzdata
+  when: ansible_distribution_release == "trusty"
+  tags:
+    - timezone
+
+- name: Create timezone file
+  become: yes
+  file:
+    path: /etc/localtime
+    src: /usr/share/zoneinfo/{{ timezone_name }}
+    force: yes
+    owner: root
+    group: root
+    state: link
+  notify:
+    - update tzdata
+  when: ansible_distribution_release == "xenial"
   tags:
     - timezone
